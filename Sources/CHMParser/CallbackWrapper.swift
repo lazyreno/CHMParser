@@ -6,7 +6,7 @@
 //
 
 // 桥接类，该类将 Swift 闭包转换为 C 语言可调用的回调函数
-class CallbackWrapper {
+final class CallbackWrapper {
     let callback: (String) -> Bool
     
     init(callback: @escaping (String) -> Bool) {
